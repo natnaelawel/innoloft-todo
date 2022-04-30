@@ -3,8 +3,6 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx,html}",
-    "./public/index.html",
-  ],
+  // content: ["./src/**/*.{js,jsx,ts,tsx,html}", "./public/index.html"],
+  content: ["./src/**/*.{js,jsx,ts,tsx,json}"],
 };

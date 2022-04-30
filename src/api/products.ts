@@ -4,6 +4,7 @@ import { getData, putData } from "./fetcher";
 export async function getProduct(id: string) {
   try {
     const res = await fetch("/product/" + id);
+
     return { data: await res.json(), message: "success" };
   } catch (error) {
     console.error(error);

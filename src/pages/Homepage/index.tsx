@@ -5,7 +5,9 @@ type Props = {};
 const HomePage = (props: Props) => {
   return (
     <BaseLayout>
-      <main>Home Page</main>
+      <main>
+        Home Page
+      </main>
     </BaseLayout>
   );
 };
