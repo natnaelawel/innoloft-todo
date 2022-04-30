@@ -1,5 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
-// import * as ReactQuill from "react-quill"; // Typescript
+import { useState } from "react";
 import { FaEdit, FaMapMarkerAlt } from "react-icons/fa";
 import GoogleMapReact from "google-map-react";
 import { BusinessModel, Category, Product, TRL } from "../../helpers/types";
@@ -9,7 +8,6 @@ import BussinessModal from "../../components/Modals/BusinessModal";
 import TRLModal from "../../components/Modals/TRLModal";
 import CategoryModal from "../../components/Modals/CategoryModal";
 import DescriptionModal from "../../components/Modals/DescriptionModal";
-import { updateProduct } from "../../api/products";
 import Loading from "../common/Loading";
 
 type Props = {
@@ -25,7 +23,6 @@ const ProductDetailComponent = (props: Props) => {
   const [isCategoriesModalOpen, setIsCategoriesModalOpen] = useState(false);
   const [isBussinessModalOpen, setIsBussinessModalOpen] = useState(false);
   const [isTRLModalOpen, setIsTRLModalOpen] = useState(false);
-  const [selectedTRL, setSelectedTRL] = useState<TRL | null>(null);
 
   const Marker = ({ text }: { text: string; lat?: number; lng?: number }) => (
     <div>

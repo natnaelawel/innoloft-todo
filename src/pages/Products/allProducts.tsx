@@ -13,7 +13,7 @@ function AllProductsPage() {
 
   return (
     <main>
-      <h1>All Products</h1>
+      <h1 className="text-2xl font-bold">All Products</h1>
 
       <div className="overflow-x-auto border-x border-t">
         <table className="table-auto w-full">
